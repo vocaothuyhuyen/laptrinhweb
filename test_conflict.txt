@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 test conflict 12
+=======
+test conflict
+>>>>>>> origin/test_conflict
