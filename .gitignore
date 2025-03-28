@@ -5,9 +5,9 @@
 /public/storage
 /storage/*.key
 /vendor
-.env
 .env.backup
 .env.production
+.phpunit.result.cache
 Homestead.json
 Homestead.yaml
 auth.json
@@ -16,3 +16,9 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+
+.env
+Ronaldo.txt
+Messi.txt
+Neymar.txt 
+
