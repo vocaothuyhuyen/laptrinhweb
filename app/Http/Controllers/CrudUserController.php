@@ -14,8 +14,12 @@ use Illuminate\Support\Facades\Auth;
 class CrudUserController extends Controller
 {
 
+
     /**
      * Login page
+     * 
+     * 
+     * 
      */
     public function login()
     {
