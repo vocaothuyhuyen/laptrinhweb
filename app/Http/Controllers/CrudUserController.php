@@ -61,6 +61,7 @@ class CrudUserController extends Controller
     {
         $request->validate([
             'name' => 'required',
+            'mota' => 'required',
             'phone' => 'required',
             'address' => 'required',
             'gender1' => 'required', // Giới tính chỉ được chọn Nam hoặc Nữ
@@ -72,6 +73,7 @@ class CrudUserController extends Controller
         $data = $request->all();
         $check = User::create([
             'name' => $data['name'],
+            'mota' => $data['mota'],
             'phone' => $data['phone'],
             'address' => $data['address'],
             'gender1' => $data['gender1'],
@@ -125,6 +127,7 @@ class CrudUserController extends Controller
 
         $request->validate([
             'name' => 'required',
+            'mota' => 'required',
             'phone' => 'required',
             'address' => 'required',
             'gender1' => 'required',
@@ -135,6 +138,7 @@ class CrudUserController extends Controller
 
         $user = User::find($input['id']);
         $user->name = $input['name'];
+        $user->mota = $input['mota'];
         $user->phone = $input['phone'];
         $user->address = $input['address'];
         $user->address = $input['gender1'];
