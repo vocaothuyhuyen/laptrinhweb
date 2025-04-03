@@ -13,9 +13,9 @@
             <a class="navbar-brand" href="index.html">My Website</a>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="login.html">Đăng nhập</a></li>
-                    <li class="nav-item"><a class="nav-link" href="register.html">Đăng ký</a></li>
-                    <li class="nav-item"><a class="nav-link" href="list.html">Danh sách</a></li>
+                    <li class="nav-item"><a class="nav-link" href='{{ route("exe.login") }}'>Đăng nhập</a></li>
+                    <li class="nav-item"><a class="nav-link" href='{{ route("exe.register") }}'>Đăng ký</a></li>
+                    <li class="nav-item"><a class="nav-link" href='{{ route("exe.list") }}'>Danh sách</a></li>
                 </ul>
             </div>
         </div>
@@ -24,7 +24,7 @@
     <div class="container text-center mt-5">
         <h2>Chào mừng bạn đến với Website</h2>
         <p>Hãy sử dụng các chức năng trên thanh menu để trải nghiệm.</p>
-        <a href="login.html" class="btn btn-primary">Bắt đầu ngay</a>
+        <a href='{{ route("exe.login") }}' class="btn btn-primary">Bắt đầu ngay</a>
     </div>
 
     <footer class="text-center mt-5 py-3 bg-light">
