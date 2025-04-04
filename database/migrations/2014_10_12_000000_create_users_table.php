@@ -32,8 +32,8 @@ return new class extends Migration
     {
         Schema::dropIfExists('users');
         Schema::table('users', function (Blueprint $table) {
-            //$table->dropColumn('avatar');
-            //$table->dropColumn('website');
+            
+            $table->dropColumn('facebook');
         });
     }
 };
