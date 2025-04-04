@@ -16,7 +16,21 @@
                 <span class="text-danger">{{ $message }}</span>
                 @enderror
             </div>
-           
+            <div class="mb-3">
+                <input type="text" class="form-control" name="age" value="{{ old('age', $user->age) }}" placeholder="Age" required>
+                @error('age')
+                <span class="text-danger">{{ $message }}</span>
+                @enderror
+            </div>
+            <div class="mb-3">
+                    <label for="website" class="form-label">Facebook.)</label>
+                    <input type="url" class="form-control" name="website" value="{{ old('website', $user->website) }}"
+                        placeholder="Nhập URL cá nhân">
+                    @error('website')
+                        <span class="text-danger">{{ $message }}</span>
+                    @enderror
+                </div>
+
 
             <div class="mb-3">
                 <input type="password" class="form-control" name="password" placeholder="Mật khẩu (để trống nếu không đổi)">
